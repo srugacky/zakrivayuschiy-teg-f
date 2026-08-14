@@ -14,7 +14,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--font-main), sans-serif;
-  font-variation-settings: var(--font-main-wght-p, 410);
+  font-variation-settings: 'wght' var(--font-main-wght-p, 410);
   font-size: 18px;
   line-height: 21px;
   background-color: var(--main-color);
@@ -59,7 +59,7 @@
 .article__title {
   font-size: 18px;
   line-height: 100%;
-  font-variation-settings: var(--font-main-wght-h, 715);
+  font-variation-settings: 'wght' var(--font-main-wght-h, 715);
   padding-inline: 10px;
   padding-block: 6px;
   border-block-end: var(--border-width, 2px) solid var(--accent-color, #000);
@@ -116,14 +116,14 @@
 
 .article__label {
   position: absolute;
-  inset-block-start: 25px;
-  inset-inline-end: 25px;
-  z-index: 2;
-  mix-blend-mode: hard-light;
   font-size: 14px;
   font-family: var(--font-accent);
   line-height: 100%;
   opacity: 0.5;
+  inset-block-start: 1.79em;
+  inset-inline-end: 1.79em;
+  z-index: 2;
+  mix-blend-mode: hard-light; 
   text-shadow:
     -1px 0 var(--main-color, #fff),
     0 1px var(--main-color, #fff),
@@ -140,17 +140,17 @@
 }
 
 .article__content {
-  padding-inline: 26px;
-  padding-block: 26px;
+  padding-inline: 1.44em;
+  padding-block: 1.44em;
   border-block-start: var(--border-width, 2px) solid var(--accent-color, #000);
 }
 
 .article__content-description {
-  margin-block-end: 25px;
+  margin-block-end: 1.39em;
 }
 
 .article__content-about {
-  margin-block-end: 22px;
+  margin-block-end: 1.22em;
 }
 
 .article__buttons {
@@ -256,8 +256,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  inline-size: 130px;
-  block-size: 38px;
+  inline-size: 7.22em;
+  block-size: 2.11em;
   background-color: transparent;
   border: var(--border-width, 2px) solid var(--accent-color, #000);
   cursor: pointer;
@@ -269,12 +269,12 @@
   align-items: center;
   justify-content: center;
   inline-size: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
-  block-size: 55px;
+  block-size: 3.06em;
   border: var(--border-width, 2px) solid var(--accent-color, #000);
   margin-inline: auto;
   background-color: var(--main-color, #fff);
   color: var(--main-color, #fff);
-  margin-block-end: 100px;
+  margin-block-end: 5.56em;
 }
 
 .button-save__icon {
@@ -286,6 +286,11 @@
 }
 
 @media (width <= 400px) {
+  .article:first-of-type .article__title{
+    padding-block: 5px;
+    line-height: 21px;
+  }
+
   .button-save {
     flex-direction: column;
     block-size: 84px;

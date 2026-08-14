@@ -14,7 +14,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--font-main), sans-serif;
-  font-variation-settings: 'wght' var(--font-main-wght-p, 410);
+  font-variation-settings: "wght" var(--font-main-wght-p, 410);
   font-size: 18px;
   line-height: 21px;
   background-color: var(--main-color);
@@ -59,7 +59,7 @@
 .article__title {
   font-size: 18px;
   line-height: 100%;
-  font-variation-settings: 'wght' var(--font-main-wght-h, 715);
+  font-variation-settings: "wght" var(--font-main-wght-h, 715);
   padding-inline: 10px;
   padding-block: 6px;
   border-block-end: var(--border-width, 2px) solid var(--accent-color, #000);
@@ -123,7 +123,7 @@
   inset-block-start: 1.79em;
   inset-inline-end: 1.79em;
   z-index: 2;
-  mix-blend-mode: hard-light; 
+  mix-blend-mode: hard-light;
   text-shadow:
     -1px 0 var(--main-color, #fff),
     0 1px var(--main-color, #fff),
@@ -286,7 +286,7 @@
 }
 
 @media (width <= 400px) {
-  .article:first-of-type .article__title{
+  .article:first-of-type .article__title {
     padding-block: 5px;
     line-height: 21px;
   }

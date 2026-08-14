@@ -1,7 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
   --font-main: "Inter-Variable";
-  --font-accent: "PressStart2P-Regular";
+  --font-accent: "PressStart2P";
   --font-main-wght-p: 410;
   --font-main-wght-h: 715;
   --block-width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
@@ -22,5 +22,4 @@
   --contour-color: #000;
   --animation-fill-color: #f00;
   --border-width: 2px;
-  --article-bg-img: url("../images/article-img-1.jpg");
 }
